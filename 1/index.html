@@ -64,7 +64,7 @@
     
 <body>
     
-   <table border="1" width="500px" height="60px" align="center" style="margin-top:50px" >
+   <table width="500px" height="60px" align="center" style="margin-top:50px" >
     
     <tr style=" background-color:#06A260 " height="100px">
              <td >
@@ -82,41 +82,41 @@
              <form action="" method="POST" >
                 <p>
                     <h3 style="padding-left: 30px;">Email</h3>
-                    <input type="email" name="Email" id="Email" pattern="[a-z0-9._%+-]+@[gmail]+\.[com]{2,}$" class="form-control" id="exampleInputemail" placeholder="Jack123@gmail.com">
+                    <input type="email" name="Email" id="Email" pattern="[a-z0-9._%+-]+@[gmail]+\.[com]{2,}$" class="form-control" id="exampleInputemail" placeholder="Jack123@gmail.com" required>
                     <p id="invalid-email" style="display:none;color:red"> Mohon isi dengan @gmail.com </p>
                  
                  </p>
                  <p>
                     <h3 style="padding-left: 30px;">Username</h3>
-                    <input type="text" name="name" id="name" pattern="^[A-Za-z\s]{8,20}$" class="form-control" id="exampleInputname">
+                    <input type="text" name="name" id="name" pattern="^[A-Za-z\s]{8,20}$" class="form-control" id="exampleInputname" required>
                     <p id="invalid-name" style="display:none;color:red">Mohon isi username minimal 8 - 20 karakter</p>
                  
                  </p>
 
                  <p>
                     <h3 style="padding-left: 30px;">NIM</h3>
-                    <input type="text" name="nim" id="nim" pattern="^[0-9]{9}$" class="form-control" id="exampleInputnim">
+                    <input type="text" name="nim" id="nim" pattern="^[0-9]{9}$" class="form-control" id="exampleInputnim" required>
                     <p id="invalid-nim" style="display:none;color:red">Mohon isi 9 angka</p>
                  
                  </p>
 
                  <p>
                     <h3 style="padding-left: 30px;">No.Handphone</h3>
-                    <input type="text" name="phone" id="phone" pattern="(\+62|62|)[0-9]{9,11}$" class="form-control" id="exampleInputphone">
+                    <input type="text" name="phone" id="phone" pattern="(\+62|62|)[0-9]{9,11}$" class="form-control" id="exampleInputphone" required>
                     <p id="invalid-phone" style="display:none;color:red">Mohon isi dengan +62 atau 08 </p>
                  
                  </p>
 
                  <p>
                     <h3 style="padding-left: 30px;">Tanggal Lahir</h3>
-                    <input type="text" name="tgllahir" id="tgllahir" pattern="^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$" class="form-control" id="exampleInputtgllahir">
+                    <input type="text" name="tgllahir" id="tgllahir" pattern="^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$" class="form-control" id="exampleInputtgllahir" required>
                     <p id="invalid-tgllahir" style="display:none;color:red">Mohon isi dalam bentuk  DD-MM-YYYY</p>
                  
                  </p>
         
                  <p>
                     <h3 style="padding-left: 30px;">Password</h3>
-                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" id="exampleInputPassword1" required>
                     <p id="invalid-passowrd" style="display:none;color:red">Panjang password minimal 8 kareter, dan harus mengandung huruf kapital dan angka</p>
                  
                  </p>
